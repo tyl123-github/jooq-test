@@ -45,7 +45,7 @@ public class JOOQGenerator extends JavaGenerator {
      * @param excludes    过滤表
      * @throws Exception
      */
-    private static void genTables(String schemaName, String packageName, String includes, String excludes) throws Exception {
+    public static void genTables(String schemaName, String packageName, String includes, String excludes) throws Exception {
         Jdbc jdbc = createJdbc();
         Generator generator = createGenerator(schemaName, packageName, includes, excludes);
 
@@ -54,7 +54,6 @@ public class JOOQGenerator extends JavaGenerator {
                 .withGenerator(generator);
 
         GenerationTool.generate(configuration);
-
     }
 
     /**

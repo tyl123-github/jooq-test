@@ -8,6 +8,3 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
   jooq:
     sql-dialect: mysql
-logging:
-  level:
-    com.test.entity.tables.daos : debug
