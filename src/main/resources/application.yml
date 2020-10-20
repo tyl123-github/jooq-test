@@ -1,0 +1,13 @@
+server:
+  port: 8787
+spring:
+  datasource:
+    url: jdbc:mysql://192.168.5.66:3306/ndtc_data_bigdatatest?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8&useSSL=false
+    username: root
+    password: Zzwl@2020
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jooq:
+    sql-dialect: mysql
+logging:
+  level:
+    com.test.entity.tables.daos : debug
